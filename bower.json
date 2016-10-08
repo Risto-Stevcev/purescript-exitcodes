@@ -1,0 +1,23 @@
+{
+  "name": "purescript-exitcodes",
+  "homepage": "https://github.com/Risto-Stevcev/purescript-exitcodes",
+  "description": "A purescript library for Bash and BSD compliant exit codes",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Risto-Stevcev/purescript-exitcodes.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "output"
+  ],
+  "dependencies": {
+    "purescript-console": "^1.0.0",
+    "purescript-enums": "^1.1.0"
+  },
+  "devDependencies": {
+    "purescript-psci-support": "^1.0.0"
+  }
+}
