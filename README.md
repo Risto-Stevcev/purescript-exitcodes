@@ -1,5 +1,7 @@
 # purescript-exitcodes
 
+[![Latest release](http://img.shields.io/bower/v/purescript-exitcodes.svg)](https://github.com/Risto-Stevcev/purescript-exitcodes/releases)
+[![Pursuit](http://pursuit.purescript.org/packages/purescript-exitcodes/badge)](https://pursuit.purescript.org/packages/purescript-exitcodes)
 
 ## Usage
 
