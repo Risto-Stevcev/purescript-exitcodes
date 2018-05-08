@@ -14,9 +14,9 @@
     "output"
   ],
   "dependencies": {
-    "purescript-enums": "^3.0.0"
+    "purescript-enums": "#compiler/0.12"
   },
   "devDependencies": {
-    "purescript-psci-support": "^3.0.0"
+    "purescript-psci-support": "#compiler/0.12"
   }
 }
