@@ -45,6 +45,40 @@ data ExitCode
 
 derive instance eqExitCode :: Eq ExitCode
 derive instance ordExitCode :: Ord ExitCode
+instance showExitCode :: Show ExitCode where
+  show = case _ of
+    Success -> "Success"
+    Error -> "Error"
+    MisuseOfShellBuiltins -> "MisuseOfShellBuiltins"
+    CLIUsageError -> "CLIUsageError"
+    DataFormatError -> "DataFormatError"
+    CannotOpenInput -> "CannotOpenInput"
+    AddresseeUnknown -> "AddresseeUnknown"
+    HostNameUnknown -> "HostNameUnknown"
+    ServiceUnavailable -> "ServiceUnavailable"
+    InternalSoftwareError -> "InternalSoftwareError"
+    SystemError -> "SystemError"
+    CriticalOSFileMissing -> "CriticalOSFileMissing"
+    CannotCreateOutputFile -> "CannotCreateOutputFile"
+    IOError -> "IOError"
+    TemporaryFailure -> "TemporaryFailure"
+    RemoteError -> "RemoteError"
+    PermissionDenied -> "PermissionDenied"
+    ConfigurationError -> "ConfigurationError"
+    CannotExecute -> "CannotExecute"
+    CommandNotFound -> "CommandNotFound"
+    InvalidExitArgument -> "InvalidExitArgument"
+    SIGHUP -> "SIGHUP"
+    SIGINT -> "SIGINT"
+    SIGQUIT -> "SIGQUIT"
+    SIGILL -> "SIGILL"
+    SIGABRT -> "SIGABRT"
+    SIGFPE -> "SIGFPE"
+    SIGKILL -> "SIGKILL"
+    SIGSEGV -> "SIGSEGV"
+    SIGPIPE -> "SIGPIPE"
+    SIGALRM -> "SIGALRM"
+    SIGTERM -> "SIGTERM"
 
 instance boundedExitCode :: Bounded ExitCode where
   bottom = Success
