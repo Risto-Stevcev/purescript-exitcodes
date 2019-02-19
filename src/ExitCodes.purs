@@ -1,6 +1,6 @@
 module ExitCodes (ExitCode(..)) where
 
-import Prelude (class Eq, class Ord, class Bounded, (+))
+import Prelude
 import Data.Enum (class BoundedEnum, class Enum, Cardinality(..))
 import Data.Maybe (Maybe(..))
 
